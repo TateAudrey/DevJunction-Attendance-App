@@ -1,3 +1,4 @@
+import 'package:dev_junction_attendance_app/screens/sign_in/sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:dev_junction_attendance_app/app_state/state_constants.dart';
 import 'package:dev_junction_attendance_app/screens/welcome_screen/welcome_screen.dart';
@@ -18,7 +19,7 @@ class StateRepository {
       bool? didLogin = value.getBool(kDidLogin);
 
       if (didLogin ?? false) {
-        // initialRoute =  Classname.routeName;
+         initialRoute =  SignIn.routeName;
       } else {
 
       }

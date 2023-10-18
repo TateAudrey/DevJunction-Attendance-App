@@ -10,6 +10,8 @@ class CustomButton extends StatelessWidget {
   final Color borderColor;  // Add borderColor attribute
   final double cornerRadius;
   final EdgeInsets padding;
+  final double width;
+  final double height;
 
   const CustomButton.defaultButton({
     Key? key,
@@ -19,7 +21,7 @@ class CustomButton extends StatelessWidget {
     this.textColor = Colors.white,
     this.borderColor = Colors.white,  // Initialize borderColor
     this.cornerRadius = 30.0,
-    this.padding = const EdgeInsets.symmetric(horizontal: 20.0),
+    this.padding = const EdgeInsets.symmetric(horizontal: 20.0), required this.width, required this.height,
   }) : super(key: key);
 
   const CustomButton.solidOutlineButton({
@@ -30,7 +32,7 @@ class CustomButton extends StatelessWidget {
     this.textColor = Colors.white,
     this.borderColor = Colors.white,  // Define the border color
     this.cornerRadius = 20.0, // Adjust the corner radius as needed
-    this.padding = const EdgeInsets.symmetric(horizontal: 20.0),
+    this.padding = const EdgeInsets.symmetric(horizontal: 20.0), required this.width, required this.height,
   }) : super(key: key);
 
   const CustomButton.outlinedButton({
@@ -41,7 +43,7 @@ class CustomButton extends StatelessWidget {
     this.textColor = Colors.black,
     this.borderColor = Colors.black,  // Initialize borderColor
     this.cornerRadius = 20.0,
-    this.padding = const EdgeInsets.symmetric(horizontal: 20.0),
+    this.padding = const EdgeInsets.symmetric(horizontal: 20.0), required this.width, required this.height,
   }) : super(key: key);
 
   const CustomButton.whiteButton({
@@ -50,7 +52,7 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.textColor = Colors.black,
     this.cornerRadius = 20.0,
-    this.padding = const EdgeInsets.symmetric(horizontal: 20.0),
+    this.padding = const EdgeInsets.symmetric(horizontal: 20.0), required this.width, required this.height,
   }) : backgroundColor = Colors.white,
         borderColor = Colors.black,
         super(key: key);
@@ -63,7 +65,7 @@ class CustomButton extends StatelessWidget {
     this.padding = const EdgeInsets.symmetric(horizontal: 0.0),
     this.cornerRadius = 0.0,
     this.backgroundColor = Colors.transparent,
-    this.borderColor = Colors.transparent,
+    this.borderColor = Colors.transparent, required this.width, required this.height, required TextAlign textAlign,
   }) : super(key: key);
 
   @override
@@ -73,7 +75,7 @@ class CustomButton extends StatelessWidget {
       return Padding(
         padding: padding,
         child: SizedBox(
-          width: 260.0,
+          width: 200.0,
           height: 45.0,
           child: OutlinedButton(
             onPressed: onPressed,
@@ -96,7 +98,7 @@ class CustomButton extends StatelessWidget {
       return Padding(
         padding: padding,
         child: SizedBox(
-          width: 260.0,
+          width: 200.0,
           height: 40.0,
           child: ElevatedButton(
             onPressed: onPressed,

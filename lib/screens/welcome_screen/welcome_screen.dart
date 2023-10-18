@@ -1,3 +1,4 @@
+import 'package:dev_junction_attendance_app/screens/sign_in/sign_in.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../stateless_widgets/custom_button.dart';
@@ -73,11 +74,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   text: 'GET STARTED',
                   onPressed: () {
                     // Handle button click
+                    Navigator.pushNamed(context, SignIn.routeName);
                   },
                   backgroundColor: kAccent,
                   textColor: Colors.white,
                   borderColor: Colors.white,
                   cornerRadius: 20,
+                  width: 200.0,
+                  height: 40.0,
                 ),
               ),
             ),
