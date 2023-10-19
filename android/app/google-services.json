@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797524512423",
+    "project_id": "devjunctionapp",
+    "storage_bucket": "devjunctionapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797524512423:android:239d0af70f5543616c9582",
+        "android_client_info": {
+          "package_name": "com.audreychankaira.dev_junction_attendance_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcSEcGSpE6lTAh7gqVhtMj4OGCvjIisoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

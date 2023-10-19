@@ -38,7 +38,6 @@ class _DevJunctionAppState extends State<DevJunctionApp> {
     return MaterialApp(
       title: 'DevJunctionApp',
       debugShowCheckedModeBanner: false,
-     // theme: RegistrationAppBar.setTheme(),
       initialRoute: widget.initialRoute,
       routes: Routes.routes,
       home: Scaffold(
@@ -51,7 +50,7 @@ class _DevJunctionAppState extends State<DevJunctionApp> {
               label: ''
           )).toList(),
           unselectedItemColor: Colors.grey,
-          selectedItemColor: Colors.pink,
+          selectedItemColor: Colors.blue,
         ),
       ),
     );
